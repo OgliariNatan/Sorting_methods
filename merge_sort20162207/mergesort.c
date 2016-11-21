@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -20,7 +21,7 @@ void merge_primeiro (int * vetor, int tam){
      free(tempvector);
 }
 
-void merge_sort ( int * vetor , int *tempvector, int esq , int dir ){//!< Função da ordenação
+void merge_sort ( int * vetor , int *tempvector, int esq , int dir ){//!< FunÃ§Ã£o da ordenaÃ§Ã£o
 
      int meio;
 
@@ -28,8 +29,8 @@ void merge_sort ( int * vetor , int *tempvector, int esq , int dir ){//!< Função
 
           meio = ( esq + dir ) / 2;
 
-          merge_sort ( vetor, tempvector , esq , meio    );//!<Chama recursivamente a função
-          merge_sort ( vetor, tempvector , meio + 1, dir );//!<Chama recursivamente a função
+          merge_sort ( vetor, tempvector , esq , meio    );//!<Chama recursivamente a funÃ§Ã£o
+          merge_sort ( vetor, tempvector , meio + 1, dir );//!<Chama recursivamente a funÃ§Ã£o
 
           funde (vetor, tempvector , esq , meio , dir );
 
@@ -39,7 +40,7 @@ void merge_sort ( int * vetor , int *tempvector, int esq , int dir ){//!< Função
 #endif // DEBUG
 }
 
-void funde ( int * vetor, int *tempvector , int esq , int meio , int dir ) {//!< Realiza a fundição dos vetor já ordenados.
+void funde ( int * vetor, int *tempvector , int esq , int meio , int dir ) {//!< Realiza a fundiÃ§Ã£o dos vetor jÃ¡ ordenados.
     int i = esq ;
     int j = esq ;
     int k = meio + 1;
@@ -62,3 +63,4 @@ void funde ( int * vetor, int *tempvector , int esq , int meio , int dir ) {//!<
      for (i = esq ; i < k; i ++)
           vetor [i] = tempvector [ i ];
 }
+
