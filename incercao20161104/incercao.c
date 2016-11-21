@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "incercao.h"
@@ -32,20 +31,21 @@ void insertsortDireta (int *vetor, int t){
  *
  */
 void insercao_binaria(int *vetor, int tam){
-     int i, x, L, R, m, j;
-     for(i=2;i<=tam;i++){
-           x = vetor[i];
-           L = 1;
-           R = i;
-           while(L<R){
-               m = (L+R) / 2;
-               if(vetor[m] <= x)
-                  L = m + 1;
+     int i, j, tmp, meio, esq, dir;
+
+     for (i=1; i<tam; i++){
+
+          tmp = vetor[i];
+          esq = 0;
+          dir = i;
+          while(esq<dir){
+               meio = (esq+dir)/2;
+               if (tmp >= vetor[tam])
+                    esq = meio + 1;
                else
-                 R = m;
+                    dir = meio;
           }
-          for(j=i;j>R;j++)
-               vetor[j] = vetor[j-1];
-          vetor[R] = x;
+          for (j=i; j>esq; j--)
+               troca(vetor, j-1, j);
      }
 }
