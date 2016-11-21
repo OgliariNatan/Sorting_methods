@@ -6,7 +6,7 @@ Requisitos:
 ->Quick Sort   100%
 
 ->Inserção Direta  100%
-->Inserção Binária 50%
+->Inserção Binária 100%
 
 ->Seleção Direta  100%
 ->Seleção Heapsort  0%
