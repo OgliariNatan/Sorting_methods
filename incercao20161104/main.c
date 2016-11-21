@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -9,16 +10,19 @@
 #include "med_3.h"
 
 //#define DEBUG
-#define TAM 10000
+#define TAM 1000
 int main()
 {
-
-
      int x=0;
-     float med;
+     float medDireta, medBinaria;
      clock_t inicio, fim;
 
      int *vetor = (int*)malloc(sizeof(int)*TAM);
+
+	 if (vetor == NULL){
+          printf("Erro ao criar o vetor\n");
+          exit(-1);
+     }
 
      srand(getpid()^time(NULL));
 
@@ -29,20 +33,29 @@ int main()
           #endif // DEBUG
      }
 
-
        medianaDeTres(vetor, 0, TAM-1);
        puts("----------------\n");
 
-       for (x=0; x<TAM; x++){
+       inicio = clock();
+       insertsortDireta(vetor, TAM);
+       fim = clock();
+       medDireta = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+       printf("media Direta %f\n",medDireta);
 
-          printf("%d\n",vetor[x]);
+       for (x=0; x<TAM; x++){
+          vetor[x] = rand();
+          #ifdef DEBUG
+               printf("%d\n",vetor[x]);
+          #endif // DEBUG
        }
 
        inicio = clock();
-       insertsort(vetor, TAM);
+       //insercao_binaria(vetor, TAM);
        fim = clock();
-       med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-       printf("media %f",med);
+       medBinaria = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+       printf("media Binaria %f\n",medBinaria);
+
+
 
     return 0;
 }
