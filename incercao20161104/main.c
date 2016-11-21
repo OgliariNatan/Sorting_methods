@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -10,10 +9,12 @@
 #include "med_3.h"
 
 //#define DEBUG
-#define TAM 1000
+#define TAM 10000     //!< Ideal 1000000
+#define VEZORDENACAO 5 //!< Ideal 20
+
 int main()
 {
-     int x=0;
+     int x=0, i;
      float medDireta, medBinaria;
      clock_t inicio, fim;
 
@@ -34,28 +35,30 @@ int main()
      }
 
        medianaDeTres(vetor, 0, TAM-1);
-       puts("----------------\n");
+       puts("----------------");
 
-       inicio = clock();
-       insertsortDireta(vetor, TAM);
-       fim = clock();
-       medDireta = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-       printf("media Direta %f\n",medDireta);
+       for (i=1; i<=VEZORDENACAO; i++){
+               inicio = clock();
+               insertsortDireta(vetor, TAM);
+               fim = clock();
+               medDireta = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+               printf("media Direta[%d] %f\n", i, medDireta);
 
-       for (x=0; x<TAM; x++){
-          vetor[x] = rand();
-          #ifdef DEBUG
-               printf("%d\n",vetor[x]);
-          #endif // DEBUG
+               for (x=0; x<TAM; x++){
+                    vetor[x] = rand();
+                    #ifdef DEBUG
+                         printf("%d\n",vetor[x]);
+                    #endif // DEBUG
+               }
+
+               inicio = clock();
+               insercao_binaria(vetor, TAM);
+               fim = clock();
+               medBinaria = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+               printf("media Binaria[%d] %f\n\n", i, medBinaria);
        }
+       puts("----------------");
 
-       inicio = clock();
-       //insercao_binaria(vetor, TAM);
-       fim = clock();
-       medBinaria = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-       printf("media Binaria %f\n",medBinaria);
-
-
-
+     free(vetor);
     return 0;
 }
