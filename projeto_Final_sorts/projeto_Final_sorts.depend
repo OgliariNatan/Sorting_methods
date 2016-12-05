@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1479694824 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<process.h>
+	<time.h>
+	<windows.h>
+	"med_3.h"
+
+1479662091 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\med_3.h
+
+1479725087 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\med_3.c
+	<stdio.h>
+	<stdlib.h>
+	"med_3.h"
+
