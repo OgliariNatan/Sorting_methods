@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1479725087 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\quicksort20161031\med_3.c
+	<stdio.h>
+	<stdlib.h>
+	"med_3.h"
+
+1479662091 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\quicksort20161031\med_3.h
+
+1479662091 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\quicksort20161031\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"quicksort.h"
+	"med_3.h"
+
+1479662091 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\quicksort20161031\quicksort.h
+
+1479725258 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\quicksort20161031\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<process.h>
+	<time.h>
+	<windows.h>
+	"quicksort.h"
+	"med_3.h"
+

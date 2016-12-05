@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -40,6 +41,3 @@ void troca (int *vetor, int esq, int dir){//!< Realiza a troca de dois elementos
           printf("troca\n");
      #endif // DEBUG
 }
-
-
-

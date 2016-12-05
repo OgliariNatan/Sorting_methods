@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "quicksort.h"
@@ -28,6 +29,3 @@ void quicksort(int *vetor, int esq, int dir){
         quicksort(vetor,pivo+1,dir);      //chama a função para ecutar novamente
     }
 }
-
-
-

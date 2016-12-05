@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1479661871 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\merge_sort20162207\med_3.c
+	<stdio.h>
+	<stdlib.h>
+	"med_3.h"
+
+1479661870 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\merge_sort20162207\med_3.h
+
+1479661870 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\merge_sort20162207\mergesort.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"mergesort.h"
+	"med_3.h"
+
+1479724477 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\merge_sort20162207\mergesort.h
+
+1479724323 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\merge_sort20162207\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<process.h>
+	<time.h>
+	<windows.h>
+	"mergesort.h"
+	"med_3.h"
+

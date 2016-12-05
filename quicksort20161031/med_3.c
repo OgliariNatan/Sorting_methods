@@ -7,6 +7,7 @@
 
 
 int medianaDeTres (int *vetor, int esq, int dir){//!< Realiza a operação de Três
+
      int med;
 
      med = (esq + dir) / 2;
@@ -40,6 +41,3 @@ void troca (int *vetor, int esq, int dir){//!< Realiza a troca de dois elementos
           printf("troca\n");
      #endif // DEBUG
 }
-
-
-

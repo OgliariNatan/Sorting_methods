@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1479695584 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\bubblesort20161121\med_3.c
+	<stdio.h>
+	<stdlib.h>
+	"med_3.h"
+
+1479661635 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\bubblesort20161121\med_3.h
+
+1479695774 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\bubblesort20161121\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<process.h>
+	<time.h>
+	<windows.h>
+	"bubbleSort.h"
+	"med_3.h"
+
+1479696020 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\bubblesort20161121\bubblesort.c
+	<stdio.h>
+	<stdlib.h>
+	"med_3.h"
+
+1479695393 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalho_final\trabalhofinal\bubblesort20161121\bubblesort.h
+
