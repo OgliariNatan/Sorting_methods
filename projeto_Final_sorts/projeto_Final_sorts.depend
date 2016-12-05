@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1480935835 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1480942419 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -8,6 +8,11 @@
 	<windows.h>
 	"bubbleSort.h"
 	"med_3.h"
+	"SelectionSorting.h"
+	"global_Uso.h"
+	"incercao.h"
+	"mergesort.h"
+	"quicksort.h"
 
 1479694824 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
 	<stdio.h>
@@ -48,4 +53,18 @@
 	<stdio.h>
 	<stdlib.h>
 	"med_3.h"
+
+1479661604 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.h
+
+1480942509 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<process.h>
+	<time.h>
+	<windows.h>
+
+1480942605 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
+
+1480935474 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 

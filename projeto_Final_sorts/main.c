@@ -8,78 +8,56 @@
 #include "bubbleSort.h"
 #include "med_3.h"
 #include "SelectionSorting.h"
+#include "global_Uso.h"
+#include "incercao.h"
+#include "mergesort.h"
+#include "quicksort.h"
 
 #define DEBUGBUBBLRSORT
 #define DEBUGSELECTION
 //#define DEBUG
-#define TAM 10000     //!< Ideal 1000000
-#define VEZORDENACAO 20 //!< Ideal 20
+#define TAM 10     //!< Ideal 1000000
+#define VEZORDENACAO 10 //!< Ideal 20
 
 int main()
 {
+int i=0;
+clock_t inicio, fim;
+float *med = (float*)malloc(sizeof(float)*(TAM*6));
+int *vetor = (int*)malloc(sizeof(int)*TAM);
 
+ if (vetor == NULL){
+     printf("Erro: ao criar o vetor\n");
+     exit(-1);
+ }
 
-     int x=0,i;
-     float med;
-     clock_t inicio, fim;
-
-     int *vetor = (int*)malloc(sizeof(int)*TAM);
-
-	 if (vetor == NULL){
-          printf("Erro: ao criar o vetor\n");
-          exit(-1);
-	 }
-
-     srand(getpid()^time(NULL));
-
-     for (x=0; x<TAM; x++){
-          vetor[x] = rand()%600;
-          #ifdef DEBUG
-               printf("%d\n",vetor[x]);
-          #endif // DEBUG
-     }
-
-
-       medianaDeTres(vetor, 0, TAM-1);
-       puts("----------------");
-
-
-for (i=1; i<=VEZORDENACAO; i++){
-          for (x=0; x<TAM; x++){
-               vetor[x] = rand();
-               #ifdef DEBUG
-                    printf("%d\n",vetor[x]);
-               #endif // DEBUG
-          }
 #ifdef DEBUGBUBBLRSORT
-       inicio = clock();
-       bubblesort(vetor, TAM);
-       fim = clock();
-       med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-       printf("media do Bubblesort[%d] %f\n",i,med);
-       puts("----------------");
+     for (i=0; i<VEZORDENACAO; i++){
+          randomico(vetor,TAM);
+          medianaDeTres(vetor, 0, TAM-1);
+          inicio = clock();
+          bubblesort(vetor, TAM);
+          fim = clock();
+          med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+          printf("media do Bubblesort[%d] %f\n",i+1,med[i]);
+     }
+     imprimi_ordenado(vetor, TAM);
 #endif // DEBUGBUBBLRSORT
 
-
 #ifdef DEBUGSELECTION
+     for (i=0; i<VEZORDENACAO; i++){
+          randomico(vetor,TAM);
           inicio = clock();
           select_sort(vetor, TAM);
           fim = clock();
-          med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do Sels[%d] %f\n",i, med);
+          med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+          printf("media do SelectionSorting[%d] %f\n",i+1, med[i]);
+     }
+     imprimi_ordenado(vetor, TAM);
 #endif // DEBUGSELECTION
 
 
-     }
-
-
-       #ifdef DEBUG
-       puts("O vetor ordenado vale:");
-        for (x=0; x<TAM; x++){
-           printf("%d\n",vetor[x]);
-        }
-       #endif // DEBUG
-
-
-    return 0;
+     free(med);
+     free(vetor);
+return 0;
 }

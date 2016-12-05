@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="bubbleSort.h" />
+		<Unit filename="global_Uso.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="global_Uso.h" />
 		<Unit filename="incercao.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
