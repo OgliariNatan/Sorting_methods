@@ -12,3 +12,6 @@ Requisitos:
 ->Seleção Heapsort  0% \n
 
 ->Merge Sort  100%
+
+
+Relatório final: https://goo.gl/WJ4phv
