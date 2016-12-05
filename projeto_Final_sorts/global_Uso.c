@@ -11,7 +11,6 @@ void randomico(int *vetor, int TAM){
      int x;
      srand(getpid()^time(NULL));
 
-
           for (x=0; x<TAM; x++){
                vetor[x] = rand();
                #ifdef DEBUG

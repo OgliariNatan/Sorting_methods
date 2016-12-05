@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Heap_sort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Heap_sort.h" />
 		<Unit filename="SelectionSorting.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -43,6 +47,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="global_Uso.h" />
+		<Unit filename="incercao.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="incercao.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
