@@ -59,7 +59,6 @@ int main()
           fim = clock();
           med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
           printf("media do Sels[%d] %f\n",i, med);
-
 #endif // DEBUGSELECTION
 
 
