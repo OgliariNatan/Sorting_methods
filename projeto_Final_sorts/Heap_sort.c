@@ -3,7 +3,7 @@
 
 //#define DEBUG
 
-void heapSort (int * vetor, int TAM){
+void heapSort (int * vetor, int TAM){///com arvore
 
      int i = TAM/2, pai, filho, t;
 

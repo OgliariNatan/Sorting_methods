@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "med_3.h"
+#include "global_Uso.h"
 
 //#define DEBUG
 
@@ -28,16 +28,4 @@ int medianaDeTres (int *vetor, int esq, int dir){//!< Realiza a operação de Três
      #endif // DEBUG
 
      return med;
-}
-
-void troca (int *vetor, int esq, int dir){//!< Realiza a troca de dois elementos
-     int ant_arry;
-
-     ant_arry  = vetor[esq];
-     vetor[esq] = vetor[dir];
-     vetor[dir] = ant_arry;
-
-     #ifdef DEBUG
-          printf("troca\n");
-     #endif // DEBUG
 }

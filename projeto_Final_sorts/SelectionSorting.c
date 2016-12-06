@@ -5,6 +5,7 @@
 #include <time.h>
 #include <windows.h>
 
+#include "global_Uso.h"
 #include "med_3.h"
 
 //#define DEBUG
