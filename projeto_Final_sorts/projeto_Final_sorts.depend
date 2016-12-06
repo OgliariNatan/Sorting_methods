@@ -27,10 +27,10 @@
 
 1481056895 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\med_3.h
 
-1481056895 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\med_3.c
+1481058894 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\med_3.c
 	<stdio.h>
 	<stdlib.h>
-	"med_3.h"
+	"global_Uso.h"
 
 1480935882 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\bubblesort.h
 
@@ -76,7 +76,7 @@
 
 1480971579 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.h
 
-1481058805 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
+1481059294 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
 	<stdio.h>
 	<stdlib.h>
 	"incercao.h"
