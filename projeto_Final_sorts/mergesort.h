@@ -1,7 +1,7 @@
 #ifndef MERGESORT_H_INCLUDED
 #define MERGESORT_H_INCLUDED
 
-void merge_primeiro (int * vetor, int tam);
+float merge_primeiro (int * vetor, int tam);
 
 void merge_sort ( int * vetor , int * tempvector, int esq , int dir );
 

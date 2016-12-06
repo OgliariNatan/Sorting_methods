@@ -1,25 +1,33 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-
+#include <limits.h>
+#include <process.h>
+#include <time.h>
+#include <windows.h>
 #include "mergesort.h"
-#include "med_3.h"
+#include "global_Uso.h"
 
 //#define DEBUG
 
-void merge_primeiro (int * vetor, int tam){
+clock_t inicio, fim;
+
+float merge_primeiro (int * vetor, int tam){
+
      int * tempvector  = malloc(sizeof(int) * tam);
      int esq =0, dir = tam-1;
+     float tempo;
 
+     inicio = clock();
      merge_sort(vetor, tempvector, esq, dir);
+     fim = clock();
+     tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
 
 #ifdef DEBUG
      printf("merge_primeiro\n");
 #endif // DEBUG
 
      free(tempvector);
+     return tempo;
 }
 
 void merge_sort ( int * vetor , int *tempvector, int esq , int dir ){//!< Função da ordenação

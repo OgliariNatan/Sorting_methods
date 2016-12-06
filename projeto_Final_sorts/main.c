@@ -21,17 +21,17 @@
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
 #define DEBUGMERGE
-//#define DEBUG
+#define DEBUG
 
 
-#define TAM 1000     //!< Ideal 1000000
+#define TAM 10     //!< Ideal 1000000
 #define VEZORDENACAO 1 //!< Ideal 20
 
 int main()
 {
     int i=0;
     clock_t inicio, fim;
-    float med;
+    float tempo;
     int *vetor = (int*)malloc(sizeof(int)*TAM);
 
     if (vetor == NULL)
@@ -51,8 +51,8 @@ int main()
         inicio = clock();
         bubblesort(vetor, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do Bubblesort[%d] %f [s]\n",i+1,med);
+        tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do Bubblesort[%d] %f [s]\n",i+1,tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
@@ -69,8 +69,8 @@ int main()
         inicio = clock();
         quicksort(vetor, 0, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do QuickSort[%d] %f [s]\n",i+1, med);
+        tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do QuickSort[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
@@ -86,8 +86,8 @@ int main()
         inicio = clock();
         insertsortDireta(vetor, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do IncercaoDireta[%d] %f [s]\n",i+1, med);
+        tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do IncercaoDireta[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
@@ -103,8 +103,8 @@ int main()
         inicio = clock();
         insercao_binaria(vetor, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do IncercaoBinaria[%d] %f [s]\n",i+1, med);
+        tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do IncercaoBinaria[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
@@ -120,8 +120,8 @@ int main()
         inicio = clock();
         select_sort(vetor, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do SelectionSorting[%d] %f [s]\n",i+1, med);
+        tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do SelectionSorting[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
@@ -133,14 +133,15 @@ int main()
 
 #ifdef DEBUGHEAPSORT //!< Seleção HEAPSORT
     puts("Metodo Heap Sort");
+    puts("NAO IMPLEMENTADO");
     for (i=0; i<VEZORDENACAO; i++)
     {
         randomico(vetor,TAM);
         inicio = clock();
         cria_heapSort(vetor, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do HeapSort[%d] %f [s]\n",i+1, med);
+        tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do HeapSort[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
@@ -155,11 +156,8 @@ int main()
     for (i=0; i<VEZORDENACAO; i++)
     {
         randomico(vetor,TAM);
-        inicio = clock();
-        merge_primeiro(vetor, TAM);
-        fim = clock();
-        med = 1000 * ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do MergeSort[%d] %fm [s]\n",i+1, med);
+        tempo = merge_primeiro(vetor, TAM);
+        printf("Tempo do MergeSort[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);

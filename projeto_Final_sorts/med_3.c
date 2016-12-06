@@ -18,8 +18,7 @@ int medianaDeTres (int *vetor, int esq, int dir){//!< Realiza a operação de Três
      if (vetor[esq] > vetor[dir])
           troca(vetor, esq, dir);
 
-     if (vetor[med] >
-          vetor[dir])
+     if (vetor[med] > vetor[dir])
           troca(vetor, med, dir);
 
      #ifdef DEBUG

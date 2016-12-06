@@ -1,11 +1,9 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "quicksort.h"
 #include "med_3.h"
 
 #define DEBUG
-
 
 void quicksort(int *vetor, int esq, int dir){
 
