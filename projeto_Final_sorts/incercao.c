@@ -18,7 +18,7 @@ void insertsortDireta (int *vetor, int t){
 
      for (n=1; n<t; n++){
 
-          for(a=n; a>0 && vetor[a-1] > vetor[a]; a--){
+          for(a=n; (a>0 && vetor[a-1]) > vetor[a]; a--){
                troca(vetor, a, a-1);
           }
      }

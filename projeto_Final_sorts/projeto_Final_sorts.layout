@@ -2,14 +2,24 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="med_3.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="207" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="global_Uso.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="423" topLine="2" />
 		</Cursor>
 	</File>
-	<File name="mergesort.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Heap_sort.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="497" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="650" topLine="22" />
 		</Cursor>
 	</File>
 	<File name="incercao.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -17,9 +27,39 @@
 			<Cursor1 position="74" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Heap_sort.c" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="quicksort.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="866" topLine="19" />
+			<Cursor1 position="97" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Heap_sort.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="69" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="quicksort.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="138" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="mergesort.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SelectionSorting.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="157" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="bubbleSort.c" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SelectionSorting.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="243" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="med_3.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,36 +72,6 @@
 			<Cursor1 position="1464" topLine="35" />
 		</Cursor>
 	</File>
-	<File name="SelectionSorting.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="157" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="med_3.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="207" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3335" topLine="112" />
-		</Cursor>
-	</File>
-	<File name="bubbleSort.c" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Heap_sort.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="69" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="SelectionSorting.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="243" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="global_Uso.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="220" topLine="0" />
@@ -70,16 +80,6 @@
 	<File name="bubbleSort.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="quicksort.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="97" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="quicksort.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="138" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

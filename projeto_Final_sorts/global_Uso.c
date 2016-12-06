@@ -9,14 +9,15 @@
 
 void randomico(int *vetor, int TAM){
      int x;
-     srand(getpid()^time(NULL));
-
-          for (x=0; x<TAM; x++){
+#ifdef DEBUG
+     puts("Vetor desordenado vale:");
+#endif // DEBUG
+     for (x=0; x<TAM; x++){
                vetor[x] = rand();
                #ifdef DEBUG
                     printf("%d\n",vetor[x]);
                #endif // DEBUG
-          }
+     }
 }
 
 

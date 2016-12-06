@@ -14,19 +14,18 @@
 #include "quicksort.h"
 #include "Heap_sort.h"
 
-
 #define DEBUGBUBBLRSORT
 #define DEBUGSELECTION
 #define DEBUGQUIKSORT
 #define DEBUGHEAPSORT
-#define DEBUGINCERCAODIRETA
-#define DEBUGINCERCAOBINARIA
+#define DEBUGINCERCAODIRETA  //!<PAUUUUUUUUU
+#define DEBUGINCERCAOBINARIA //!<PAUUUUUUUUU
 #define DEBUGMERGE
 //#define DEBUG
 
 
-#define TAM 1000     //!< Ideal 1000000
-#define VEZORDENACAO 5 //!< Ideal 20
+#define TAM 1000000     //!< Ideal 1000000
+#define VEZORDENACAO 20 //!< Ideal 20
 
 int main()
 {
@@ -40,9 +39,10 @@ int *vetor = (int*)malloc(sizeof(int)*TAM);
      exit(-1);
  }
 
-puts("---------------------");
+srand(getpid()^time(NULL));//!<Alimenta a semente
 
 #ifdef DEBUGBUBBLRSORT
+     puts("Metodo Bubble Sort");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           medianaDeTres(vetor, 0, TAM-1);
@@ -50,26 +50,32 @@ puts("---------------------");
           bubblesort(vetor, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do Bubblesort[%d] %f\n",i+1,med[i]);
+          printf("media do Bubblesort[%d] %f [s]\n",i+1,med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     #ifdef DEBUG
+     imprimi_ordenado(vetor, TAM);
+     #endif // DEBUG
      puts("---------------------");
 #endif // DEBUGBUBBLRSORT
 
 #ifdef DEBUGSELECTION
+     puts("Metodo Selection");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           inicio = clock();
           select_sort(vetor, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do SelectionSorting[%d] %f\n",i+1, med[i]);
+          printf("media do SelectionSorting[%d] %f [s]\n",i+1, med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     #ifdef DEBUG
+     imprimi_ordenado(vetor, TAM);
+     #endif // DEBUG
      puts("---------------------");
 #endif // DEBUGSELECTION
 
 #ifdef DEBUGQUIKSORT
+     puts("Metodo Quiksort");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           medianaDeTres(vetor, 0, TAM-1);
@@ -77,61 +83,73 @@ puts("---------------------");
           quicksort(vetor, 0, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do QuickSort[%d] %f\n",i+1, med[i]);
+          printf("media do QuickSort[%d] %f [s]\n",i+1, med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     #ifdef DEBUG
+     imprimi_ordenado(vetor, TAM);
+     #endif // DEBUG
      puts("---------------------");
 #endif // DEBUGQUIKSORT
 
 #ifdef DEBUGHEAPSORT
+     puts("Metodo Heap Sort");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           inicio = clock();
           heapSort(vetor, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do HeapSort[%d] %f\n",i+1, med[i]);
+          printf("media do HeapSort[%d] %f [s]\n",i+1, med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     #ifdef DEBUG
+     imprimi_ordenado(vetor, TAM);
+     #endif // DEBUG
      puts("---------------------");
 #endif // DEBUGHEAPSORT
 
 #ifdef DEBUGINCERCAODIRETA
+     puts("Metodo Incercao Direta");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           inicio = clock();
-          //insertsortDireta(vetor, TAM);
+          insertsortDireta(vetor, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
           printf("media do IncercaoDireta[%d] %f\n",i+1, med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     imprimi_ordenado(vetor, TAM);
      puts("---------------------");
 #endif // DEBUGINCERCAODIRETA
 
 #ifdef DEBUGINCERCAOBINARIA
+     puts("Metodo Incercao Binaria");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           inicio = clock();
           insercao_binaria(vetor, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do IncercaoBinaria[%d] %f\n",i+1, med[i]);
+          printf("media do IncercaoBinaria[%d] %f [s]\n",i+1, med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     #ifdef DEBUG
+     imprimi_ordenado(vetor, TAM);
+     #endif // DEBUG
      puts("---------------------");
 #endif // DEBUGINCERCAOBINARIA
 
 #ifdef DEBUGMERGE
+     puts("Metodo Merge Sort");
      for (i=0; i<VEZORDENACAO; i++){
           randomico(vetor,TAM);
           inicio = clock();
           merge_primeiro(vetor, TAM);
           fim = clock();
           med[i] = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-          printf("media do MergeSort[%d] %f\n",i+1, med[i]);
+          printf("media do MergeSort[%d] %f [s]\n",i+1, med[i]);
      }
-     //imprimi_ordenado(vetor, TAM);
+     #ifdef DEBUG
+     imprimi_ordenado(vetor, TAM);
+     #endif // DEBUG
      puts("---------------------");
 #endif // DEBUGMERGE
 
