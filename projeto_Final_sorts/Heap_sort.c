@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "global_Uso.h"
+
 //#define DEBUG
 
-void heapSort (int * vetor, int TAM){///com arvore
+void cria_heapSort (int * vetor, int TAM){///com arvore
 
      int i = TAM/2, pai, filho, t;
 
@@ -36,3 +38,5 @@ void heapSort (int * vetor, int TAM){///com arvore
           vetor[pai] = t;
      }
 }
+
+void heapSort (int * vetor, int TAM);
