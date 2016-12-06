@@ -14,18 +14,18 @@
 #include "quicksort.h"
 #include "Heap_sort.h"
 
-#define DEBUGBUBBLRSORT
-#define DEBUGSELECTION
-#define DEBUGQUIKSORT
+//#define DEBUGBUBBLRSORT
+//#define DEBUGQUIKSORT
+//#define DEBUGINCERCAODIRETA
+//#define DEBUGINCERCAOBINARIA
+//#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
-#define DEBUGINCERCAODIRETA
-#define DEBUGINCERCAOBINARIA
 #define DEBUGMERGE
 //#define DEBUG
 
 
-#define TAM 100000     //!< Ideal 1000000
-#define VEZORDENACAO 10 //!< Ideal 20
+#define TAM 1000     //!< Ideal 1000000
+#define VEZORDENACAO 1 //!< Ideal 20
 
 int main()
 {
@@ -42,7 +42,7 @@ int main()
 
     srand(getpid()^time(NULL));//!<Alimenta a semente
 
-#ifdef DEBUGBUBBLRSORT
+#ifdef DEBUGBUBBLRSORT //!< BUBLLE SORT
     puts("Metodo Bubble Sort");
     for (i=0; i<VEZORDENACAO; i++)
     {
@@ -60,24 +60,7 @@ int main()
     puts("---------------------");
 #endif // DEBUGBUBBLRSORT
 
-#ifdef DEBUGSELECTION
-    puts("Metodo Selection");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
-        randomico(vetor,TAM);
-        inicio = clock();
-        select_sort(vetor, TAM);
-        fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do SelectionSorting[%d] %f [s]\n",i+1, med);
-    }
-#ifdef DEBUG
-    imprimi_ordenado(vetor, TAM);
-#endif // DEBUG
-    puts("---------------------");
-#endif // DEBUGSELECTION
-
-#ifdef DEBUGQUIKSORT
+#ifdef DEBUGQUIKSORT //!< QUICK SORT
     puts("Metodo Quiksort");
     for (i=0; i<VEZORDENACAO; i++)
     {
@@ -95,24 +78,7 @@ int main()
     puts("---------------------");
 #endif // DEBUGQUIKSORT
 
-#ifdef DEBUGHEAPSORT
-    puts("Metodo Heap Sort");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
-        randomico(vetor,TAM);
-        inicio = clock();
-        cria_heapSort(vetor, TAM);
-        fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do HeapSort[%d] %f [s]\n",i+1, med);
-    }
-#ifdef DEBUG
-    imprimi_ordenado(vetor, TAM);
-#endif // DEBUG
-    puts("---------------------");
-#endif // DEBUGHEAPSORT
-
-#ifdef DEBUGINCERCAODIRETA
+#ifdef DEBUGINCERCAODIRETA //!<Inserção Direta
     puts("Metodo Incercao Direta");
     for (i=0; i<VEZORDENACAO; i++)
     {
@@ -129,7 +95,7 @@ int main()
     puts("---------------------");
 #endif // DEBUGINCERCAODIRETA
 
-#ifdef DEBUGINCERCAOBINARIA
+#ifdef DEBUGINCERCAOBINARIA //!<Inserção Binária
     puts("Metodo Incercao Binaria");
     for (i=0; i<VEZORDENACAO; i++)
     {
@@ -146,7 +112,45 @@ int main()
     puts("---------------------");
 #endif // DEBUGINCERCAOBINARIA
 
-#ifdef DEBUGMERGE
+#ifdef DEBUGSELECTION //!< Seleção Direta
+    puts("Metodo Selection");
+    for (i=0; i<VEZORDENACAO; i++)
+    {
+        randomico(vetor,TAM);
+        inicio = clock();
+        select_sort(vetor, TAM);
+        fim = clock();
+        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do SelectionSorting[%d] %f [s]\n",i+1, med);
+    }
+#ifdef DEBUG
+    imprimi_ordenado(vetor, TAM);
+#endif // DEBUG
+    puts("---------------------");
+#endif // DEBUGSELECTION
+
+
+
+#ifdef DEBUGHEAPSORT //!< Seleção HEAPSORT
+    puts("Metodo Heap Sort");
+    for (i=0; i<VEZORDENACAO; i++)
+    {
+        randomico(vetor,TAM);
+        inicio = clock();
+        cria_heapSort(vetor, TAM);
+        fim = clock();
+        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do HeapSort[%d] %f [s]\n",i+1, med);
+    }
+#ifdef DEBUG
+    imprimi_ordenado(vetor, TAM);
+#endif // DEBUG
+    puts("---------------------");
+#endif // DEBUGHEAPSORT
+
+
+
+#ifdef DEBUGMERGE //!< MergeSort
     puts("Metodo Merge Sort");
     for (i=0; i<VEZORDENACAO; i++)
     {
@@ -154,8 +158,8 @@ int main()
         inicio = clock();
         merge_primeiro(vetor, TAM);
         fim = clock();
-        med = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
-        printf("Tempo do MergeSort[%d] %f [s]\n",i+1, med);
+        med = 1000 * ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
+        printf("Tempo do MergeSort[%d] %fm [s]\n",i+1, med);
     }
 #ifdef DEBUG
     imprimi_ordenado(vetor, TAM);
