@@ -2,16 +2,17 @@
 Repositorio criado para a realização em conjunto do trabalho final da materia de PROG_II. 
 
 Requisitos:
+
 ->Bubble Sort  100%
-->Quick Sort   100% \n
+->Quick Sort   100% 
 
 
 ->Inserção Direta  100% 
-->Inserção Binária 100% \n
+->Inserção Binária 100%
 
 
 ->Seleção Direta  100%
-->Seleção Heapsort  0% arvore \n
+->Seleção Heapsort  0% arvore
 
 
 ->Merge Sort  100%
