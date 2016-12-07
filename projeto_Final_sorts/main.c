@@ -6,7 +6,6 @@
 #include <windows.h>
 
 #include "bubbleSort.h"
-#include "med_3.h"
 #include "SelectionSorting.h"
 #include "global_Uso.h"
 #include "incercao.h"
@@ -15,16 +14,16 @@
 #include "Heap_sort.h"
 
 //#define DEBUGBUBBLRSORT
-//#define DEBUGQUIKSORT
+#define DEBUGQUIKSORT
 //#define DEBUGINCERCAODIRETA
 //#define DEBUGINCERCAOBINARIA
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
-#define DEBUGMERGE
-#define DEBUG
+//#define DEBUGMERGE
+//#define DEBUG
 
 
-#define TAM 10     //!< Ideal 1000000
+#define TAM 10    //!< Ideal 1000000
 #define VEZORDENACAO 1 //!< Ideal 20
 
 int main()

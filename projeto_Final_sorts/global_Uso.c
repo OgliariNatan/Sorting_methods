@@ -44,18 +44,16 @@ void troca (int *vetor, int esq, int dir){//!< Realiza a troca de dois elementos
 
 int medianaDeTres (int *vetor, int esq, int dir){//!< Realiza a operação de Três
 
-     int med;
+     int med = (esq + dir) / 2;
 
-     med = (esq + dir) / 2;
-
-     if (vetor[esq] > vetor[dir])
-          troca(vetor, esq, med);
-
-     if (vetor[esq] > vetor[dir])
+     if (vetor[dir] < vetor[esq])
           troca(vetor, esq, dir);
 
-     if (vetor[med] > vetor[dir])
-          troca(vetor, med, dir);
+     if (vetor[med] < vetor[esq])
+          troca(vetor, med, esq);
+
+     if (vetor[dir] < vetor[med])
+          troca(vetor, dir, med);
 
      #ifdef DEBUG
           printf("medianaDeTres\n");

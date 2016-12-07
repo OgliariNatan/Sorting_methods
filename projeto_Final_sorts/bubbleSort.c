@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "med_3.h"
-
 #define DEBUG
 
 void bubblesort (int * vetor, int TAM){
@@ -17,7 +15,7 @@ void bubblesort (int * vetor, int TAM){
      {
         if(vetor[j] > vetor[j+1])
         {
-            aux = vetor[j];
+        aux = vetor[j];
         vetor[j] = vetor[j+1];
         vetor[j+1]=aux;
         }

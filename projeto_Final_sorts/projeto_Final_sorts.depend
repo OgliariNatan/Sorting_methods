@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1481067808 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1481071207 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -7,7 +7,6 @@
 	<time.h>
 	<windows.h>
 	"bubbleSort.h"
-	"med_3.h"
 	"SelectionSorting.h"
 	"global_Uso.h"
 	"incercao.h"
@@ -15,7 +14,7 @@
 	"quicksort.h"
 	"Heap_sort.h"
 
-1481058835 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
+1481070776 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -23,7 +22,6 @@
 	<time.h>
 	<windows.h>
 	"global_Uso.h"
-	"med_3.h"
 
 1481056895 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\med_3.h
 
@@ -46,11 +44,10 @@
 
 1481067213 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\mergesort.h
 
-1481068152 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.c
+1481070770 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	"quicksort.h"
-	"med_3.h"
 
 1479662091 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.h
 
@@ -61,7 +58,7 @@
 
 1479661604 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.h
 
-1481068546 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
+1481071207 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -69,7 +66,7 @@
 	<time.h>
 	<windows.h>
 
-1481068546 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
+1481070748 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
 
 1480935474 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 
