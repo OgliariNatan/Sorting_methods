@@ -75,6 +75,7 @@ void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
           exit(EXIT_FAILURE);
      }
 
+     fprintf(fp,"%s\n",nomeArq);
      for(x=0; x<tamExporta; x++){
           fprintf(fp, "%d\n",vetor[x]);
           //fwrite(&vetor[x], sizeof(tamExporta), 1, fp);
