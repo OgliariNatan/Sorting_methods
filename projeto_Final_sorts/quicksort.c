@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 #include "quicksort.h"
 #include "global_Uso.h"
 
 #define DEBUG
 
-int particionar (int *vetor, int esq, int dir);
 
 void quicksort(int *vetor, int esq, int dir)
 {
@@ -13,8 +13,13 @@ void quicksort(int *vetor, int esq, int dir)
     if(esq < dir)
     {
         p = particionar (vetor, esq, dir);
+        puts("Quick esquerdo");
         quicksort(vetor, esq, p);
+        Sleep(200);
         quicksort(vetor, p+1, dir);
+        puts("Quick direito");
+        Sleep(200);
+        printf("---------------------------------------------------P  %d\n",p);
     }
 }
 
@@ -22,6 +27,7 @@ int particionar (int *vetor, int esq, int dir)
 {
 #ifdef DEBUG
     puts("Particionar");
+    Sleep(200);
 #endif // DEBUG
     int med, i, j, pivo;
 
@@ -35,14 +41,16 @@ int particionar (int *vetor, int esq, int dir)
         do
         {
             i++;
-            //puts("Primeiro while do");
+            puts("Primeiro while do");
+            Sleep(200);
         }
         while(vetor[i] < pivo);
 
         do
         {
             j--;
-            //puts("segundo while do");
+            puts("segundo while do");
+            Sleep(200);
         }
         while (vetor[j] > pivo);
 
@@ -73,9 +81,8 @@ int particionar (int *vetor, int esq, int dir)
 
 
 
-
-
 /*
+
 void quicksort(int *vetor, int esq, int dir){
 
     int pivo = esq, i,ch,j;

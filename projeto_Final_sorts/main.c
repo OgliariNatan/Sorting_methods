@@ -20,11 +20,12 @@
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
 //#define DEBUGMERGE
-#define DEBUG
+//#define DEBUG
 
 
-#define TAM 10    //!< Ideal 1000000
+#define TAM 501    //!< Ideal 1000000
 #define VEZORDENACAO 1 //!< Ideal 20
+#define TAMEXPORTA 100 //!< Define a quantidade de elementos a serem exportados
 
 int main()
 {
@@ -64,7 +65,7 @@ int main()
     for (i=0; i<VEZORDENACAO; i++)
     {
         randomico(vetor,TAM);
-        //medianaDeTres(vetor, 0, TAM-1);
+        medianaDeTres(vetor, 0, TAM-1);
         inicio = clock();
         quicksort(vetor, 0, TAM-1);
         fim = clock();

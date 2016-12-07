@@ -70,4 +70,9 @@ int medianaDeTres (int *vetor, int esq, int dir) //!< Realiza a operação de Três
 }
 
 
+void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
 
+
+
+
+}

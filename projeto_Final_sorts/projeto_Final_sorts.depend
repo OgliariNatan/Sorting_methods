@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1481075463 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1481077303 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -14,7 +14,7 @@
 	"quicksort.h"
 	"Heap_sort.h"
 
-1481070776 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
+1481076001 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -44,13 +44,13 @@
 
 1481067213 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\mergesort.h
 
-1481075850 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.c
+1481077481 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	"quicksort.h"
 	"global_Uso.h"
 
-1479662091 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.h
+1481076602 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.h
 
 1481072106 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\bubblesort.c
 	<stdio.h>
@@ -58,7 +58,7 @@
 
 1479661604 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.h
 
-1481074289 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
+1481076951 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -66,7 +66,7 @@
 	<time.h>
 	<windows.h>
 
-1481070748 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
+1481076293 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
 
 1480935474 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 

@@ -5,7 +5,7 @@ void randomico(int *vetor, int TAM);
 
 void imprimi_ordenado(int *vetor, int TAM);
 
-void exporta_txt(int *vetor, int tamExporta, char *nomeArq, float *med);
+void exporta_txt(int *vetor, int tamExporta, char *nomeArq);
 
 int medianaDeTres (int *vetor, int esq, int dir);
 
