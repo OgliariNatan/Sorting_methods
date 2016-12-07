@@ -20,7 +20,7 @@
 //#define DEBUGINCERCAOBINARIA
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
-//#define DEBUGMERGE
+#define DEBUGMERGE
 #define DEBUG
 
 
