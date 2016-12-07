@@ -20,7 +20,7 @@
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
 //#define DEBUGMERGE
-//#define DEBUG
+#define DEBUG
 
 
 #define TAM 10    //!< Ideal 1000000

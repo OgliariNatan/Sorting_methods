@@ -5,7 +5,7 @@
 #include <time.h>
 #include <windows.h>
 
-//#define DEBUG
+#define DEBUG
 
 void randomico(int *vetor, int TAM)
 {
