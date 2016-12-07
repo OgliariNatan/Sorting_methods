@@ -18,30 +18,40 @@ void quicksort(int *vetor, int esq, int dir)
     }
 }
 
-int particionar (int *vetor, int esq, int dir){
-     int med, i, j, pivo;
+int particionar (int *vetor, int esq, int dir)
+{
+#ifdef DEBUG
+    puts("Particionar");
+#endif // DEBUG
+    int med, i, j, pivo;
 
-     med = medianaDeTres(vetor, esq, dir);
-     pivo = vetor[med];
-     i = esq;
-     j = dir+1;
+    med = medianaDeTres(vetor, esq, dir);
+    pivo = vetor[med];
+    i = esq;
+    j = dir+1;
 
-     while(1){
-          do {
-               i++;
-               //puts("Primeiro while do");
-          }while(vetor[i] < pivo);
+    while(1)
+    {
+        do
+        {
+            i++;
+            //puts("Primeiro while do");
+        }
+        while(vetor[i] < pivo);
 
-          do {
-               j--;
-               //puts("segundo while do");
-          }while (vetor[j] > pivo);
+        do
+        {
+            j--;
+            //puts("segundo while do");
+        }
+        while (vetor[j] > pivo);
 
-          if (i >= j){
-               return j;
-          }
-          troca(vetor, i, j);
-     }
+        if (i >= j)
+        {
+            return j;
+        }
+        troca(vetor, i, j);
+    }
 }
 
 
