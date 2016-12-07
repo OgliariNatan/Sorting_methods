@@ -9,12 +9,10 @@
 
 //#define DEBUG
 
-void select_sort ( int * vector, int n )
-{
+void select_sort ( int * vector, int n ){
     int i, j, max = 0;
 
-    for (i=n; i>1; i--)
-    {
+    for (i=n; i>1; i--) {
 
         max = 0;//!<Indice do vetor
 

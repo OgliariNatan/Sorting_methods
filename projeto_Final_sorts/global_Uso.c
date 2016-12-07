@@ -7,14 +7,12 @@
 
 #define DEBUG
 
-void randomico(int *vetor, int TAM)
-{
+void randomico(int *vetor, int TAM){
     int x;
 #ifdef DEBUG
     puts("Vetor desordenado vale:");
 #endif // DEBUG
-    for (x=0; x<TAM; x++)
-    {
+    for (x=0; x<TAM; x++){
         vetor[x] = rand();
 #ifdef DEBUG
         printf("%d\n",vetor[x]);
@@ -23,19 +21,16 @@ void randomico(int *vetor, int TAM)
 }
 
 
-void imprimi_ordenado(int *vetor, int TAM)
-{
+void imprimi_ordenado(int *vetor, int TAM){
 
     int x;
     puts("O vetor ordenado vale:");
-    for (x=0; x<TAM; x++)
-    {
+    for (x=0; x<TAM; x++){
         printf("%d\n",vetor[x]);
     }
 }
 
-void troca (int *vetor, int esq, int dir) //!< Realiza a troca de dois elementos
-{
+void troca (int *vetor, int esq, int dir){ //!< Realiza a troca de dois elementos
     int ant_arry;
 
     ant_arry  = vetor[esq];
@@ -47,8 +42,8 @@ void troca (int *vetor, int esq, int dir) //!< Realiza a troca de dois elementos
 #endif // DEBUG
 }
 
-int medianaDeTres (int *vetor, int esq, int dir) //!< Realiza a operação de Três
-{
+int medianaDeTres (int *vetor, int esq, int dir){ //!< Realiza a operação de Três
+
 
     int med = (esq + dir) / 2;
 

@@ -5,21 +5,17 @@
 
 //#define DEBUG
 
-void cria_heapSort (int * vetor, int TAM) ///com arvore
-{
+void cria_heapSort (int * vetor, int TAM){
 
     int i = TAM/2, pai, filho, t;
 
-    while(1)
-    {
+    while(1) {
 
-        if (i > 0)
-        {
+        if (i > 0){
             i--;
             t = vetor[i];
         }
-        else
-        {
+        else {
             TAM--;
             if (TAM==0)
                 return;
@@ -28,12 +24,10 @@ void cria_heapSort (int * vetor, int TAM) ///com arvore
         }
         pai = i;
         filho = i* 2+1;
-        while(filho < TAM)
-        {
+        while(filho < TAM) {
             if ((filho+1 < TAM) && (vetor[filho+1] > vetor[filho]))
                 filho++;
-            if (vetor[filho] > t)
-            {
+            if (vetor[filho] > t) {
                 vetor[pai] = vetor[filho];
                 pai = filho;
                 filho = pai* 2+1;

@@ -7,11 +7,9 @@
 #define DEBUG
 
 
-void quicksort(int *vetor, int esq, int dir)
-{
+void quicksort(int *vetor, int esq, int dir){
     int p;
-    if(esq < dir)
-    {
+    if(esq < dir) {
         p = particionar (vetor, esq, dir);
         puts("Quick esquerdo");
         quicksort(vetor, esq, p);
@@ -19,12 +17,11 @@ void quicksort(int *vetor, int esq, int dir)
         quicksort(vetor, p+1, dir);
         puts("Quick direito");
         Sleep(200);
-        printf("---------------------------------------------------P  %d\n",p);
+        printf("---------------------------------------------------P: %d\n",p);
     }
 }
 
-int particionar (int *vetor, int esq, int dir)
-{
+int particionar (int *vetor, int esq, int dir){
 #ifdef DEBUG
     puts("Particionar");
     Sleep(200);
@@ -36,26 +33,20 @@ int particionar (int *vetor, int esq, int dir)
     i = esq;
     j = dir+1;
 
-    while(1)
-    {
-        do
-        {
+    while(1){
+        do{
             i++;
             puts("Primeiro while do");
-            Sleep(200);
-        }
-        while(vetor[i] < pivo);
+            //Sleep(200);
+        }while(vetor[i] < pivo);
 
-        do
-        {
+        do{
             j--;
             puts("segundo while do");
-            Sleep(200);
-        }
-        while (vetor[j] > pivo);
+            //Sleep(200);
+        } while (vetor[j] > pivo);
 
-        if (i >= j)
-        {
+        if (i >= j){
             return j;
         }
         troca(vetor, i, j);

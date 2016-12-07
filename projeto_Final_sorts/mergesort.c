@@ -11,8 +11,7 @@
 
 clock_t inicio, fim;
 
-float merge_primeiro (int * vetor, int tam)
-{
+float merge_primeiro (int * vetor, int tam){
 
     int * tempvector  = malloc(sizeof(int) * tam);
     int esq =0, dir = tam-1;
@@ -31,29 +30,22 @@ float merge_primeiro (int * vetor, int tam)
     return tempo;
 }
 
-void merge_sort ( int * vetor, int *tempvector, int esq, int dir )   //!< Função da ordenação
-{
-
+void merge_sort ( int * vetor, int *tempvector, int esq, int dir ){   //!< Função da ordenação
     int meio;
 
-    if ( esq < dir )
-    {
-
+    if ( esq < dir ) {
         meio = ( esq + dir ) / 2;
-
         merge_sort ( vetor, tempvector, esq, meio    );  //!<Chama recursivamente a função
         merge_sort ( vetor, tempvector, meio + 1, dir ); //!<Chama recursivamente a função
 
         funde (vetor, tempvector, esq, meio, dir );
-
     }
 #ifdef DEBUG
     printf("merge_sort\n");
 #endif // DEBUG
 }
 
-void funde ( int * vetor, int *tempvector, int esq, int meio, int dir )     //!< Realiza a fundição dos vetor já ordenados.
-{
+void funde ( int * vetor, int *tempvector, int esq, int meio, int dir ){    //!< Realiza a fundição dos vetor já ordenados.
     int i = esq ;
     int j = esq ;
     int k = meio + 1;
@@ -62,15 +54,12 @@ void funde ( int * vetor, int *tempvector, int esq, int meio, int dir )     //!<
     printf("funde\n");
 #endif // DEBUG
 
-    while (j <= meio && k <= dir )
-    {
-
+    while (j <= meio && k <= dir ) {
         if ( vetor [j] < vetor [ k ])
             tempvector [ i ++] = vetor [j ++];
         else
             tempvector [ i ++] = vetor [k ++];
     }
-
     while (j <= meio )
         tempvector [ i ++] = vetor [j ++];
 

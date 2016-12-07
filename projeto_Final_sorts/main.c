@@ -27,15 +27,13 @@
 #define VEZORDENACAO 1 //!< Ideal 20
 #define TAMEXPORTA 100 //!< Define a quantidade de elementos a serem exportados
 
-int main()
-{
+int main(){
     int i=0;
     clock_t inicio, fim;
     float tempo;
     int *vetor = (int*)malloc(sizeof(int)*TAM);
 
-    if (vetor == NULL)
-    {
+    if (vetor == NULL) {
         printf("Erro: ao criar o vetor\n");
         exit(-1);
     }
@@ -62,8 +60,7 @@ int main()
 
 #ifdef DEBUGQUIKSORT //!< QUICK SORT
     puts("Metodo Quiksort");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
+    for (i=0; i<VEZORDENACAO; i++) {
         randomico(vetor,TAM);
         medianaDeTres(vetor, 0, TAM-1);
         inicio = clock();
@@ -80,8 +77,7 @@ int main()
 
 #ifdef DEBUGINCERCAODIRETA //!<Inserção Direta
     puts("Metodo Incercao Direta");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
+    for (i=0; i<VEZORDENACAO; i++) {
         randomico(vetor,TAM);
         inicio = clock();
         insertsortDireta(vetor, TAM);
@@ -97,8 +93,7 @@ int main()
 
 #ifdef DEBUGINCERCAOBINARIA //!<Inserção Binária
     puts("Metodo Incercao Binaria");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
+    for (i=0; i<VEZORDENACAO; i++) {
         randomico(vetor,TAM);
         inicio = clock();
         insercao_binaria(vetor, TAM);
@@ -114,8 +109,7 @@ int main()
 
 #ifdef DEBUGSELECTION //!< Seleção Direta
     puts("Metodo Selection");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
+    for (i=0; i<VEZORDENACAO; i++) {
         randomico(vetor,TAM);
         inicio = clock();
         select_sort(vetor, TAM);
@@ -134,8 +128,7 @@ int main()
 #ifdef DEBUGHEAPSORT //!< Seleção HEAPSORT
     puts("Metodo Heap Sort");
     puts("NAO IMPLEMENTADO");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
+    for (i=0; i<VEZORDENACAO; i++){
         randomico(vetor,TAM);
         inicio = clock();
         cria_heapSort(vetor, TAM);
@@ -153,8 +146,7 @@ int main()
 
 #ifdef DEBUGMERGE //!< MergeSort
     puts("Metodo Merge Sort");
-    for (i=0; i<VEZORDENACAO; i++)
-    {
+    for (i=0; i<VEZORDENACAO; i++) {
         randomico(vetor,TAM);
         tempo = merge_primeiro(vetor, TAM);
         printf("Tempo do MergeSort[%d] %f [s]\n",i+1, tempo);

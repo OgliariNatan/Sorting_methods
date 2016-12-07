@@ -14,15 +14,12 @@
  *
  */
 
-void insertsortDireta (int *vetor, int t)
-{
+void insertsortDireta (int *vetor, int t){
     int n, a;
 
-    for (n=1; n<t; n++)
-    {
+    for (n=1; n<t; n++){
 
-        for(a=n; (a>0 && vetor[a-1] > vetor[a]); a--)
-        {
+        for(a=n; (a>0 && vetor[a-1] > vetor[a]); a--){
             troca(vetor, a, a-1);
         }
     }
@@ -38,14 +35,12 @@ void insercao_binaria(int *vetor, int tam)
 {
     int i, j, tmp, meio, esq, dir;
 
-    for (i=1; i<tam; i++)
-    {
+    for (i=1; i<tam; i++) {
 
         tmp = vetor[i];
         esq = 0;
         dir = i;
-        while(esq<dir)
-        {
+        while(esq<dir){
             meio = (esq+dir)/2;
             if (tmp >= vetor[meio])
                 esq = meio + 1;
