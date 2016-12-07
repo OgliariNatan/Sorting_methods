@@ -14,13 +14,13 @@
 #include "quicksort.h"
 #include "Heap_sort.h"
 
-//#define DEBUGBUBBLRSORT
+#define DEBUGBUBBLRSORT
 #define DEBUGQUIKSORT
-//#define DEBUGINCERCAODIRETA
-//#define DEBUGINCERCAOBINARIA
-//#define DEBUGSELECTION
+#define DEBUGINCERCAODIRETA
+#define DEBUGINCERCAOBINARIA
+#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
-//#define DEBUGMERGE
+#define DEBUGMERGE
 #define DEBUG
 
 
