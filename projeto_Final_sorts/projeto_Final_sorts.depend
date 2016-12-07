@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1481077303 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1481080542 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -53,13 +53,14 @@
 
 1481076602 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.h
 
-1481072106 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\bubblesort.c
+1481079856 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\bubblesort.c
 	<stdio.h>
 	<stdlib.h>
+	"global_Uso.h"
 
 1479661604 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.h
 
-1481079565 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
+1481080483 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -71,14 +72,14 @@
 
 1480935474 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 
-1481075953 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.c
+1481079771 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.c
 	<stdio.h>
 	<stdlib.h>
 	"global_Uso.h"
 
 1481062264 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.h
 
-1481075962 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
+1481079722 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programação_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
 	<stdio.h>
 	<stdlib.h>
 	"incercao.h"

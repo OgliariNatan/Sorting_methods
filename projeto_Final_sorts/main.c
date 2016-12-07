@@ -14,9 +14,9 @@
 #include "Heap_sort.h"
 
 //#define DEBUGBUBBLRSORT
-#define DEBUGQUIKSORT
+//#define DEBUGQUIKSORT
 //#define DEBUGINCERCAODIRETA
-//#define DEBUGINCERCAOBINARIA
+#define DEBUGINCERCAOBINARIA
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
 //#define DEBUGMERGE
@@ -102,6 +102,7 @@ int main(){
         printf("Tempo do IncercaoBinaria[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
+    exporta_txt(vetor, TAMEXPORTA, "nahdn");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");

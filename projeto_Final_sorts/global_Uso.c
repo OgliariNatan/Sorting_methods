@@ -5,7 +5,7 @@
 #include <time.h>
 #include <windows.h>
 
-#define DEBUG
+//#define DEBUG
 
 void randomico(int *vetor, int TAM){
     int x;
@@ -66,8 +66,18 @@ int medianaDeTres (int *vetor, int esq, int dir){ //!< Realiza a operação de Trê
 
 
 void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
+     int x;
+     FILE *fp = NULL;
+     fp = fopen("Metodos.txt","w");
 
+     if (fp == NULL){
+          perror("Erro ao criar arquivo");
+          exit(EXIT_FAILURE);
+     }
+     for(x=0; x<tamExporta; x++){
+          fprintf(fp, "%d",vetor[x]);
+          //fwrite(&vetor[x], sizeof(tamExporta), 1, fp);
+     }
 
-
-
+     fclose(fp);
 }
