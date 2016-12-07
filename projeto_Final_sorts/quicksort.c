@@ -31,6 +31,7 @@ int particionar (int *vetor, int esq, int dir){
                i++;
                //puts("Primeiro while do");
           }while(vetor[i] < pivo);
+
           do {
                j--;
                //puts("segundo while do");

@@ -64,9 +64,9 @@ int main()
     for (i=0; i<VEZORDENACAO; i++)
     {
         randomico(vetor,TAM);
-        medianaDeTres(vetor, 0, TAM-1);
+        //medianaDeTres(vetor, 0, TAM-1);
         inicio = clock();
-        quicksort(vetor, 0, TAM);
+        quicksort(vetor, 0, TAM-1);
         fim = clock();
         tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
         printf("Tempo do QuickSort[%d] %f [s]\n",i+1, tempo);
