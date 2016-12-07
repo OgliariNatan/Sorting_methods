@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <string.h>
 #include <process.h>
 #include <time.h>
 #include <windows.h>
@@ -14,21 +15,22 @@
 #include "Heap_sort.h"
 
 //#define DEBUGBUBBLRSORT
-//#define DEBUGQUIKSORT
+#define DEBUGQUIKSORT
 //#define DEBUGINCERCAODIRETA
-#define DEBUGINCERCAOBINARIA
+//#define DEBUGINCERCAOBINARIA
 //#define DEBUGSELECTION
 //#define DEBUGHEAPSORT //!<FALTA
 //#define DEBUGMERGE
-//#define DEBUG
+#define DEBUG
 
 
 #define TAM 501    //!< Ideal 1000000
-#define VEZORDENACAO 1 //!< Ideal 20
-#define TAMEXPORTA 100 //!< Define a quantidade de elementos a serem exportados
+#define VEZORDENACAO 10 //!< Ideal 20
+#define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
     int i=0;
+    char nomeArq[20];
     clock_t inicio, fim;
     float tempo;
     int *vetor = (int*)malloc(sizeof(int)*TAM);
@@ -53,6 +55,8 @@ int main(){
         printf("Tempo do Bubblesort[%d] %f [s]\n",i+1,tempo);
     }
 #ifdef DEBUG
+    strcpy(nomeArq, "BublleSort.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -70,6 +74,8 @@ int main(){
         printf("Tempo do QuickSort[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
+    strcpy(nomeArq, "QuickSort.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -86,6 +92,8 @@ int main(){
         printf("Tempo do IncercaoDireta[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
+    strcpy(nomeArq, "InsercaoDireta.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -102,11 +110,13 @@ int main(){
         printf("Tempo do IncercaoBinaria[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
-    exporta_txt(vetor, TAMEXPORTA, "nahdn");
+    strcpy(nomeArq, "InsercaoBinaria.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
 #endif // DEBUGINCERCAOBINARIA
+
 
 #ifdef DEBUGSELECTION //!< Seleção Direta
     puts("Metodo Selection");
@@ -119,6 +129,8 @@ int main(){
         printf("Tempo do SelectionSorting[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
+    strcpy(nomeArq, "SelecaoDireta.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -138,6 +150,8 @@ int main(){
         printf("Tempo do HeapSort[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
+    strcpy(nomeArq, "SelecaoHeapSort.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -153,6 +167,8 @@ int main(){
         printf("Tempo do MergeSort[%d] %f [s]\n",i+1, tempo);
     }
 #ifdef DEBUG
+    strcpy(nomeArq, "MergeSort.txt");
+    exporta_txt(vetor, TAMEXPORTA, nomeArq);
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");

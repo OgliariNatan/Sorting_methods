@@ -67,15 +67,16 @@ int medianaDeTres (int *vetor, int esq, int dir){ //!< Realiza a operação de Trê
 
 void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
      int x;
-     FILE *fp = NULL;
-     fp = fopen("Metodos.txt","w");
+
+     FILE *fp = fopen(nomeArq,"w");
 
      if (fp == NULL){
           perror("Erro ao criar arquivo");
           exit(EXIT_FAILURE);
      }
+
      for(x=0; x<tamExporta; x++){
-          fprintf(fp, "%d",vetor[x]);
+          fprintf(fp, "%d\n",vetor[x]);
           //fwrite(&vetor[x], sizeof(tamExporta), 1, fp);
      }
 

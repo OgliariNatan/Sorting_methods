@@ -4,9 +4,9 @@
 #include "quicksort.h"
 #include "global_Uso.h"
 
-#define DEBUG
+//#define DEBUG
 
-
+/*
 void quicksort(int *vetor, int esq, int dir){
     int p;
     if(esq < dir) {
@@ -52,6 +52,7 @@ int particionar (int *vetor, int esq, int dir){
         troca(vetor, i, j);
     }
 }
+*/
 
 
 
@@ -72,7 +73,6 @@ int particionar (int *vetor, int esq, int dir){
 
 
 
-/*
 
 void quicksort(int *vetor, int esq, int dir){
 
@@ -97,4 +97,4 @@ void quicksort(int *vetor, int esq, int dir){
         quicksort(vetor,pivo+1,dir);
     }
 }
-*/
+
