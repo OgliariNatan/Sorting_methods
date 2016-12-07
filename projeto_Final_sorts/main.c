@@ -24,7 +24,7 @@
 #define DEBUG
 
 
-#define TAM 501    //!< Ideal 1000000
+#define TAM 10000    //!< Ideal 1000000
 #define VEZORDENACAO 10 //!< Ideal 20
 #define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
 

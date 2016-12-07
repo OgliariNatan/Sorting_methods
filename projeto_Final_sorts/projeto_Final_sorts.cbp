@@ -54,10 +54,6 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="med_3.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="med_3.h" />
 		<Unit filename="mergesort.c">
 			<Option compilerVar="CC" />
 		</Unit>
