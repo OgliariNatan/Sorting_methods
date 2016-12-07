@@ -1,9 +1,70 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "quicksort.h"
+#include "global_Uso.h"
 
 #define DEBUG
 
+int particionar (int *vetor, int esq, int dir);
+
+void quicksort(int *vetor, int esq, int dir)
+{
+    int p;
+    if(esq < dir)
+    {
+        p = particionar (vetor, esq, dir);
+        quicksort(vetor, esq, p);
+        quicksort(vetor, p+1, dir);
+    }
+}
+
+int particionar (int *vetor, int esq, int dir){
+     int med, i, j, pivo;
+
+     med = medianaDeTres(vetor, esq, dir);
+     pivo = vetor[med];
+     i = esq;
+     j = dir+1;
+
+     while(1){
+          do {
+               i++;
+               puts("Primeiro while do");
+          }while(vetor[i] < pivo);
+          do {
+               j++;
+               puts("segundo while do");
+          }while (vetor[j] > pivo);
+
+          if (i >= j){
+               return j;
+          }
+          troca(vetor, i, j);
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 void quicksort(int *vetor, int esq, int dir){
 
     int pivo = esq, i,ch,j;
@@ -27,3 +88,4 @@ void quicksort(int *vetor, int esq, int dir){
         quicksort(vetor,pivo+1,dir);
     }
 }
+*/

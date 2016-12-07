@@ -7,60 +7,66 @@
 
 //#define DEBUG
 
-void randomico(int *vetor, int TAM){
-     int x;
+void randomico(int *vetor, int TAM)
+{
+    int x;
 #ifdef DEBUG
-     puts("Vetor desordenado vale:");
+    puts("Vetor desordenado vale:");
 #endif // DEBUG
-     for (x=0; x<TAM; x++){
-               vetor[x] = rand();
-               #ifdef DEBUG
-                    printf("%d\n",vetor[x]);
-               #endif // DEBUG
-     }
+    for (x=0; x<TAM; x++)
+    {
+        vetor[x] = rand();
+#ifdef DEBUG
+        printf("%d\n",vetor[x]);
+#endif // DEBUG
+    }
 }
 
 
-void imprimi_ordenado(int *vetor, int TAM){
+void imprimi_ordenado(int *vetor, int TAM)
+{
 
-int x;
-puts("O vetor ordenado vale:");
-for (x=0; x<TAM; x++){
-     printf("%d\n",vetor[x]);
-   }
+    int x;
+    puts("O vetor ordenado vale:");
+    for (x=0; x<TAM; x++)
+    {
+        printf("%d\n",vetor[x]);
+    }
 }
 
-void troca (int *vetor, int esq, int dir){//!< Realiza a troca de dois elementos
-     int ant_arry;
+void troca (int *vetor, int esq, int dir) //!< Realiza a troca de dois elementos
+{
+    int ant_arry;
 
-     ant_arry  = vetor[esq];
-     vetor[esq] = vetor[dir];
-     vetor[dir] = ant_arry;
+    ant_arry  = vetor[esq];
+    vetor[esq] = vetor[dir];
+    vetor[dir] = ant_arry;
 
-     #ifdef DEBUG
-          printf("troca\n");
-     #endif // DEBUG
+#ifdef DEBUG
+    printf("troca\n");
+#endif // DEBUG
 }
 
-int medianaDeTres (int *vetor, int esq, int dir){//!< Realiza a operação de Três
+int medianaDeTres (int *vetor, int esq, int dir) //!< Realiza a operação de Três
+{
 
-     int med = (esq + dir) / 2;
+    int med = (esq + dir) / 2;
 
-     if (vetor[dir] < vetor[esq])
-          troca(vetor, esq, dir);
+    if (vetor[dir] < vetor[esq])
+        troca(vetor, esq, dir);
 
-     if (vetor[med] < vetor[esq])
-          troca(vetor, med, esq);
+    if (vetor[med] < vetor[esq])
+        troca(vetor, med, esq);
 
-     if (vetor[dir] < vetor[med])
-          troca(vetor, dir, med);
+    if (vetor[dir] < vetor[med])
+        troca(vetor, dir, med);
 
-     #ifdef DEBUG
-          printf("medianaDeTres\n");
-          printf("A posicao da med e: %d\n",med);
-     #endif // DEBUG
+#ifdef DEBUG
+    printf("medianaDeTres\n");
+    printf("A posicao da med e: %d\n",med);
+#endif // DEBUG
 
-     return med;
+    return med;
 }
 
 
