@@ -109,7 +109,7 @@
 
 1481236939 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 
-1481276829 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1481278127 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -133,7 +133,7 @@
 
 1481236939 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.h
 
-1481236939 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.h
+1481278610 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.h
 
 1481236939 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\mergesort.c
 	<stdio.h>
@@ -161,8 +161,9 @@
 	<windows.h>
 	"global_Uso.h"
 
-1481236987 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.c
+1481278610 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.c
 	<stdio.h>
 	<stdlib.h>
 	"global_Uso.h"
+	"Heap_sort.h"
 

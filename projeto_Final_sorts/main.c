@@ -144,7 +144,7 @@ int main(){
     for (i=0; i<VEZORDENACAO; i++){
         randomico(vetor,TAM);
         inicio = clock();
-        cria_heapSort(vetor, TAM);
+        cria_heap(vetor, TAM);
         fim = clock();
         tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
         printf("Tempo do HeapSort[%d] %f [s]\n",i+1, tempo);

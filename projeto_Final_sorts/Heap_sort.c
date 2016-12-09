@@ -2,46 +2,26 @@
 #include <stdlib.h>
 
 #include "global_Uso.h"
+#include "Heap_sort.h"
 
 #define DEBUG
 
 struct heap {
      int comp;
-     int TAM;
+     int tam;
      int *dados;
 };
 
 
-void cria_heapSort (int * vetor, int TAM){
+void cria_heap (int * vetor, int TAM){
+     struct heap heap_t;
+     heap_t.tam = TAM;
+     heap_t.dados = vetor;
+     heap_t.comp = heap_t.tam-1;
 
-    int i = TAM/2, pai, filho, t;
 
-    while(1) {
 
-        if (i > 0){
-            i--;
-            t = vetor[i];
-        }
-        else {
-            TAM--;
-            if (TAM==0)
-                return;
-            t = vetor[TAM];
-            vetor[TAM] = vetor[0];
-        }
-        pai = i;
-        filho = i* 2+1;
-        while(filho < TAM) {
-            if ((filho+1 < TAM) && (vetor[filho+1] > vetor[filho]))
-                filho++;
-            if (vetor[filho] > t) {
-                vetor[pai] = vetor[filho];
-                pai = filho;
-                filho = pai* 2+1;
-            }
-            else
-                break;
-        }
-        vetor[pai] = t;
-    }
 }
+
+
+//void heapSort
