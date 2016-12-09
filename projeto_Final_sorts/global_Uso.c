@@ -67,6 +67,9 @@ int medianaDeTres (int *vetor, int esq, int dir){ //!< Realiza a operação de Trê
 
 void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
      int x;
+#ifdef DEBUG
+    puts("Exporta_txt");
+#endif // DEBUG
 
      FILE *fp = fopen(nomeArq,"w");
 
@@ -78,7 +81,6 @@ void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
      fprintf(fp,"%s\n",nomeArq);
      for(x=0; x<tamExporta; x++){
           fprintf(fp, "%d\n",vetor[x]);
-          //fwrite(&vetor[x], sizeof(tamExporta), 1, fp);
      }
 
      fclose(fp);

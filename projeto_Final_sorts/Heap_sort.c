@@ -3,7 +3,14 @@
 
 #include "global_Uso.h"
 
-//#define DEBUG
+#define DEBUG
+
+struct heap {
+     int comp;
+     int TAM;
+     int *dados;
+};
+
 
 void cria_heapSort (int * vetor, int TAM){
 
@@ -38,5 +45,3 @@ void cria_heapSort (int * vetor, int TAM){
         vetor[pai] = t;
     }
 }
-
-void heapSort (int * vetor, int TAM);
