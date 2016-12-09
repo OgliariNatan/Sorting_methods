@@ -1,8 +1,10 @@
 #ifndef HEAP_SORT_H_INCLUDED
 #define HEAP_SORT_H_INCLUDED
 
-void cria_heap (int * vetor, int TAM);
+typedef struct heap heap_t;
 
-void heapSort (int * vetor, int TAM);
+heap_t cria_heap(int *vetor, int TAM);
+
+
 
 #endif // HEAP_SORT_H_INCLUDED
