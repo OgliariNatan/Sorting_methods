@@ -12,13 +12,14 @@ struct heap {
      int *dados;
 };
 
-heap_t cria_heap(int *vetor, int TAM){
+heap_t *cria_heap(int *vetor, int TAM){
 
      heap_t *a = malloc(sizeof(heap_t));
      a->dados = vetor;
 
 
 
-     free(a);
+     return a;
+
 }
 

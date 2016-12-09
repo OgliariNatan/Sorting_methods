@@ -141,14 +141,19 @@ int main(){
 #ifdef DEBUGHEAPSORT //!< Seleção HEAPSORT
     puts("Metodo Heap Sort");
     puts("NAO IMPLEMENTADO");
+    heap_t *meu_heap;
+    meu_heap = cria_heap(vetor, TAM);
     for (i=0; i<VEZORDENACAO; i++){
         randomico(vetor,TAM);
+
         inicio = clock();
-        //cria_heap(vetor, TAM);
+        //heapSort(vetor, TAM);
         fim = clock();
+
         tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
         printf("Tempo do HeapSort[%d] %f [s]\n",i+1, tempo);
     }
+    free(meu_heap);
 #ifdef DEBUG
     strcpy(nomeArq, "SelecaoHeapSort.txt");
     exporta_txt(vetor, TAMEXPORTA, nomeArq);

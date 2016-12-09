@@ -3,8 +3,6 @@
 
 typedef struct heap heap_t;
 
-heap_t cria_heap(int *vetor, int TAM);
-
-
+heap_t *cria_heap(int *vetor, int TAM);
 
 #endif // HEAP_SORT_H_INCLUDED
