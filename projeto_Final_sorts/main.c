@@ -24,8 +24,8 @@
 //#define DEBUG
 
 
-#define TAM 1000000    //!< Ideal 1000000
-#define VEZORDENACAO 3 //!< Ideal 20
+#define TAM 1000    //!< Ideal 1000000
+#define VEZORDENACAO 1 //!< Ideal 20
 #define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
@@ -142,12 +142,12 @@ int main(){
     puts("Metodo Heap Sort");
     puts("EM IMPLEMENTACAO");
     heap_t *meu_heap;
-    meu_heap = cria_heap(vetor, TAM);
+    //meu_heap = cria_heap(vetor, TAM);
     for (i=0; i<VEZORDENACAO; i++){
         randomico(vetor,TAM);
 
         inicio = clock();
-        //heapSort(meu_heap);
+        heapsort(meu_heap, TAM);
         fim = clock();
 
         tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
