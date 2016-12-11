@@ -25,7 +25,7 @@
 
 
 #define TAM 1000000    //!< Ideal 1000000
-#define VEZORDENACAO 20 //!< Ideal 20
+#define VEZORDENACAO 50 //!< Ideal 20
 #define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
