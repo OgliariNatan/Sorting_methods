@@ -4,7 +4,7 @@
 #include "global_Uso.h"
 #include "Heap_sort.h"
 
-#define DEBUG
+//#define DEBUG
 
 typedef struct heaps{
     int comprimento;
