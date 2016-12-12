@@ -14,18 +14,18 @@
 #include "quicksort.h"
 #include "Heap_sort.h"
 
-//#define DEBUGBUBBLRSORT
-//#define DEBUGQUIKSORT
-//#define DEBUGINCERCAODIRETA
-//#define DEBUGINCERCAOBINARIA
-//#define DEBUGSELECTION
-#define DEBUGHEAPSORT //!<FALTA
-//#define DEBUGMERGE
-//#define DEBUG
+#define DEBUGBUBBLRSORT
+#define DEBUGQUIKSORT
+#define DEBUGINCERCAODIRETA
+#define DEBUGINCERCAOBINARIA
+#define DEBUGSELECTION
+#define DEBUGHEAPSORT
+#define DEBUGMERGE
+#define DEBUG
 
 
-#define TAM 1000000    //!< Ideal 1000000
-#define VEZORDENACAO 50 //!< Ideal 20
+#define TAM 501    //!< Ideal 1000000
+#define VEZORDENACAO 20 //!< Ideal 20
 #define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
@@ -140,9 +140,10 @@ int main(){
 
 #ifdef DEBUGHEAPSORT //!< Seleção HEAPSORT
     puts("Metodo Heap Sort");
-    heap_t *meu_heap;
-    meu_heap = cria_heap(vetor, TAM);
+
     for (i=0; i<VEZORDENACAO; i++){
+        heap_t *meu_heap;
+        meu_heap = cria_heap(vetor, TAM);
         randomico(vetor,TAM);
 
         inicio = clock();
@@ -151,8 +152,8 @@ int main(){
 
         tempo = ((float) fim - (float) inicio ) / CLOCKS_PER_SEC;
         printf("Tempo do HeapSort[%d] %f [s]\n",i+1, tempo);
+        free(meu_heap);
     }
-    free(meu_heap);
 #ifdef DEBUG
     strcpy(nomeArq, "SelecaoHeapSort.txt");
     exporta_txt(vetor, TAMEXPORTA, nomeArq);
