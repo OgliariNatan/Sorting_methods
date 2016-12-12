@@ -21,10 +21,10 @@
 #define DEBUGSELECTION
 #define DEBUGHEAPSORT
 #define DEBUGMERGE
-#define DEBUG
+//#define DEBUG  //!<Imprimi na tela e exporta para .txt
 
 
-#define TAM 501    //!< Ideal 1000000
+#define TAM 100    //!< Ideal 1000000
 #define VEZORDENACAO 20 //!< Ideal 20
 #define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
 
