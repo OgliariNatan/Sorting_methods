@@ -24,9 +24,9 @@
 //#define DEBUG  //!<Imprimi na tela e exporta para .txt
 
 
-#define TAM 100    //!< Ideal 1000000
-#define VEZORDENACAO 20 //!< Ideal 20
-#define TAMEXPORTA 501 //!< Define a quantidade de elementos a serem exportados
+#define TAM 10000    //!< Ideal 1000000
+#define VEZORDENACAO 2 //!< Ideal 20
+#define TAMEXPORTA 100 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
     int i=0;
@@ -47,7 +47,7 @@ int main(){
     for (i=0; i<VEZORDENACAO; i++)
     {
         randomico(vetor,TAM);
-        medianaDeTres(vetor, 0, TAM-1);
+        // medianaDeTres(vetor, 0, TAM-1);
         inicio = clock();
         bubblesort(vetor, TAM);
         fim = clock();

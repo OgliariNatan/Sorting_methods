@@ -13,7 +13,7 @@ void randomico(int *vetor, int TAM){
     puts("Vetor desordenado vale:");
 #endif // DEBUG
     for (x=0; x<TAM; x++){
-        vetor[x] = rand();
+        vetor[x] = rand() + rand();
 #ifdef DEBUG
         printf("%d\n",vetor[x]);
 #endif // DEBUG
