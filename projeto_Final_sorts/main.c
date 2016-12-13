@@ -14,7 +14,7 @@
 #include "quicksort.h"
 #include "Heap_sort.h"
 
-//#define DEBUGBUBBLRSORT
+#define DEBUGBUBBLRSORT
 #define DEBUGQUIKSORT
 #define DEBUGINCERCAODIRETA
 #define DEBUGINCERCAOBINARIA
@@ -24,13 +24,12 @@
 #define DEBUG  //!<Imprimi na tela e exporta para .txt
 
 
-#define TAM 1000000    //!< Ideal 1000000
+#define TAM 100    //!< Ideal 1000000
 #define VEZORDENACAO 20 //!< Ideal 20
 #define TAMEXPORTA 100 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
     int i=0;
-    char nomeArq[20];
     clock_t inicio, fim;
     float tempo, media;
     int *vetor = (int*)malloc(sizeof(int)*TAM);
@@ -57,8 +56,7 @@ int main(){
     }
     printf("Media do BubbleSort vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "BublleSort.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "BublleSort.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -79,8 +77,7 @@ int main(){
     }
     printf("Media do QuickSort vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "QuickSort.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "QuickSort.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -100,8 +97,7 @@ int main(){
     }
     printf("Media do IncercaoDireta vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "InsercaoDireta.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "InsercaoDireta.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -121,8 +117,7 @@ int main(){
     }
     printf("Media da Incersao Binaria vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "InsercaoBinaria.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "InsercaoBinaria.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -143,8 +138,7 @@ int main(){
     }
     printf("Media da Selecao Direta vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "SelecaoDireta.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "SelecaoDireta.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -171,8 +165,7 @@ int main(){
     }
     printf("Media da Selecao HeapSort vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "SelecaoHeapSort.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "SelecaoHeapSort.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
@@ -191,8 +184,7 @@ int main(){
     }
     printf("Media do MergeSort vale: %f\n",media/VEZORDENACAO);
 #ifdef DEBUG
-    strcpy(nomeArq, "MergeSort.txt");
-    exporta_txt(vetor, TAMEXPORTA, nomeArq);
+    exporta_txt(vetor, TAMEXPORTA, "MergeSort.txt");
     imprimi_ordenado(vetor, TAM);
 #endif // DEBUG
     puts("---------------------");
