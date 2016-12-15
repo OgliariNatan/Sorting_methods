@@ -70,7 +70,6 @@ int main(){
     media = 0;
     for (i=0; i<VEZORDENACAO; i++) {
         randomico(vetor,TAM);
-        medianaDeTres(vetor, 0, TAM-1);
         inicio = clock();
         quicksort(vetor, 0, TAM-1);
         fim = clock();
