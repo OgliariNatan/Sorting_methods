@@ -1,0 +1,23 @@
+BublleSort_Tempo.txt
+Tempo[ 0 ]  0.000000
+Tempo[ 1 ]  0.000000
+Tempo[ 2 ]  0.000000
+Tempo[ 3 ]  0.010000
+Tempo[ 4 ]  0.000000
+Tempo[ 5 ]  0.000000
+Tempo[ 6 ]  0.000000
+Tempo[ 7 ]  0.010000
+Tempo[ 8 ]  0.000000
+Tempo[ 9 ]  0.000000
+Tempo[ 10 ]  0.000000
+Tempo[ 11 ]  0.000000
+Tempo[ 12 ]  0.010000
+Tempo[ 13 ]  0.000000
+Tempo[ 14 ]  0.000000
+Tempo[ 15 ]  0.000000
+Tempo[ 16 ]  0.000000
+Tempo[ 17 ]  0.010000
+Tempo[ 18 ]  0.000000
+Tempo[ 19 ]  0.000000
+A Media  BublleSort_Tempo.txt vale:  0.002000 [s] 
+O Desvio padrao  BublleSort_Tempo.txt vale: 0.004104 [s] 

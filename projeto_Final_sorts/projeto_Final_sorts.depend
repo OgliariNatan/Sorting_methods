@@ -91,9 +91,9 @@
 	<stdlib.h>
 	"global_Uso.h"
 
-1481760521 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
+1481768483 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
 
-1481760642 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
+1481769293 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -102,7 +102,7 @@
 	<windows.h>
 	<math.h>
 
-1481764331 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
+1481764645 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
 	<stdio.h>
 	<stdlib.h>
 	"incercao.h"
@@ -110,7 +110,7 @@
 
 1481236939 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 
-1481764524 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1481769498 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -147,14 +147,14 @@
 	"mergesort.h"
 	"global_Uso.h"
 
-1481236939 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.c
+1481764677 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	"quicksort.h"
 	"global_Uso.h"
 
-1481236939 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
+1481764685 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\selectionsorting.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -163,7 +163,7 @@
 	<windows.h>
 	"global_Uso.h"
 
-1481576250 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.c
+1481764625 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\heap_sort.c
 	<stdio.h>
 	<stdlib.h>
 	"global_Uso.h"

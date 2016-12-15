@@ -116,3 +116,28 @@ float media_tempos(float* tempos, int n){
 
     return media;
 }
+
+void exportaTempo_txt (char *nomeArq, float media, float desvio, float *tempos, int tamExportaTempo){
+    int x;
+#ifdef DEBUG
+    puts("ExportaTempo_txt");
+#endif // DEBUG
+
+     FILE *fp = fopen(nomeArq,"w");
+
+     if (fp == NULL){
+          perror("Erro ao criar arquivo");
+          exit(EXIT_FAILURE);
+     }
+
+     fprintf(fp,"%s\n",nomeArq);
+     for(x=0; x<tamExportaTempo; x++){
+          fprintf(fp, "%s %d %s %f %s\n","Tempo[",x, "] " ,tempos[x], "[s]");
+     }
+
+     fprintf(fp, "%s %s %s %f %s \n", "A Media ",nomeArq, "vale: ", media, "[s]");
+
+     fprintf(fp, "%s %s %s %f %s \n","O Desvio padrao ",nomeArq, "vale:", desvio, "[s]");
+
+     fclose(fp);
+}

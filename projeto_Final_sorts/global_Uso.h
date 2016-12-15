@@ -7,6 +7,8 @@ void imprimi_ordenado(int *vetor, int TAM);
 
 void exporta_txt(int *vetor, int tamExporta, char *nomeArq);
 
+void exportaTempo_txt (char *nomeArq, float media, float desvio, float *tempos, int tamExportaTempo);
+
 int medianaDeTres (int *vetor, int esq, int dir);
 
 void troca (int *vetor, int esq, int dir);
