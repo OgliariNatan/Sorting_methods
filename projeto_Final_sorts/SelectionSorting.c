@@ -28,4 +28,3 @@ void select_sort ( int * vector, int n ){
     printf("\n");
 #endif // DEBUG
 }
-

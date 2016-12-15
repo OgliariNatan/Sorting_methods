@@ -21,7 +21,6 @@ void randomico(int *vetor, int TAM){
     }
 }
 
-
 void imprimi_ordenado(int *vetor, int TAM){
 
     int x;
@@ -64,7 +63,6 @@ int medianaDeTres (int *vetor, int esq, int dir){ //!< Realiza a operação de Trê
 
     return med;
 }
-
 
 void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
      int x;

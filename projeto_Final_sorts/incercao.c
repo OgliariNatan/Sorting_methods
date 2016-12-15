@@ -6,14 +6,6 @@
 
 //#define DEBUG
 
-/** \brief ordanação por Inserção direta
- *
- * \param
- * \param
- * \return
- *
- */
-
 void insertsortDireta (int *vetor, int t){
     int n, a;
 
@@ -25,12 +17,6 @@ void insertsortDireta (int *vetor, int t){
     }
 }
 
-/** \brief ordanação por Insercao Binaria
- *
- * \param vetor de n elementos
- * \param tamanho do vetor
- *
- */
 void insercao_binaria(int *vetor, int tam)
 {
     int i, j, tmp, meio, esq, dir;

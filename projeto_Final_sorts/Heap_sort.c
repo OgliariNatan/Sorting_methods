@@ -40,22 +40,17 @@ void set_comp_heap(heap_t* heap, int comprimento){
     }
 }
 
-
-
 int pai(int i){
     return((i-1)/2);
 }
-
 
 int direita(int i){
     return((2*i)+2);
 }
 
-
 int esquerda(int i){
     return((2*i)+1);
 }
-
 
 void heapify(heap_t* heap, int i){
     int e = esquerda(i);
@@ -91,14 +86,12 @@ void heapify(heap_t* heap, int i){
     }
 }
 
-
 void constroi_heap(heap_t* heap){
     int i;
 
     for(i = (heap->tamanho-1)/2;i >= 0; i--)
         heapify(heap,i);
 }
-
 
 void heapsort(heap_t *heap, int tamanho){
 	int i;
