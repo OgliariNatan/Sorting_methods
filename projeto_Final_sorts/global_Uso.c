@@ -4,6 +4,7 @@
 #include <process.h>
 #include <time.h>
 #include <windows.h>
+#include <math.h>
 
 //#define DEBUG
 
@@ -84,4 +85,36 @@ void exporta_txt(int *vetor, int tamExporta, char *nomeArq){
      }
 
      fclose(fp);
+}
+
+float desvio_tempos(float* tempos, float media, int n){
+    int k;
+    float soma_desvios = 0;
+    float desvio = 0;
+
+    for(k=0; k<n; k++)
+        soma_desvios += pow(tempos[k] - media,2);
+
+    desvio = sqrt(soma_desvios/(n-1));
+
+#ifdef DEBUG
+    printf("\n desvio = %.8f s\n",desvio);
+#endif // DEBUG
+    return desvio;
+}
+
+float media_tempos(float* tempos, int n){
+    int k;
+    float soma_tempos = 0;
+    float media = 0;
+
+    for(k=0; k<n ;k++)
+        soma_tempos += tempos[k];
+
+    media = soma_tempos/n;
+#ifdef DEBUG
+    printf("\n media = %.8f s", media);
+#endif // DEBUG
+
+    return media;
 }

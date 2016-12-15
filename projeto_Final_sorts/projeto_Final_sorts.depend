@@ -91,15 +91,16 @@
 	<stdlib.h>
 	"global_Uso.h"
 
-1481236939 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
+1481760521 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.h
 
-1481575719 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
+1481760642 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\global_uso.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	<process.h>
 	<time.h>
 	<windows.h>
+	<math.h>
 
 1481236939 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.c
 	<stdio.h>
@@ -109,13 +110,14 @@
 
 1481236939 c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\incercao.h
 
-1481640214 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
+1481761529 source:c:\users\cliente\documents\(engenhariaeletrônica)\(fase_5)\programacao_de_computadores_ii\trabalhofinal\projeto_final_sorts\main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	<string.h>
 	<process.h>
 	<time.h>
+	<math.h>
 	<windows.h>
 	"bubbleSort.h"
 	"SelectionSorting.h"

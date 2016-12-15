@@ -11,4 +11,8 @@ int medianaDeTres (int *vetor, int esq, int dir);
 
 void troca (int *vetor, int esq, int dir);
 
+float desvio_tempos(float* tempos, float media, int n);
+
+float media_tempos(float* tempos, int n);
+
 #endif // GLOBAL_USO_H_INCLUDED
