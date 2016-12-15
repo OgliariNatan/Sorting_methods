@@ -57,7 +57,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media do BubbleSort vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao vale: %f \n",desvio);
+    printf("O desvio padrao vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "BublleSort.txt");
     imprimi_ordenado(vetor, TAM);
@@ -80,7 +80,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media do QuickSort vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao do Quicksort vale: %f \n",desvio);
+    printf("O desvio padrao do Quicksort vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "QuickSort.txt");
     imprimi_ordenado(vetor, TAM);
@@ -102,7 +102,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media do IncercaoDireta vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao da IncercaoDireta vale: %f \n",desvio);
+    printf("O desvio padrao da IncercaoDireta vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "InsercaoDireta.txt");
     imprimi_ordenado(vetor, TAM);
@@ -124,7 +124,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media da Incercao Binaria vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao da Incercao Binariaa vale: %f \n",desvio);
+    printf("O desvio padrao da Incercao Binariaa vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "InsercaoBinaria.txt");
     imprimi_ordenado(vetor, TAM);
@@ -146,7 +146,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media da Selecao Direta vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao da Selecao Direta vale: %f \n",desvio);
+    printf("O desvio padrao da Selecao Direta vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "SelecaoDireta.txt");
     imprimi_ordenado(vetor, TAM);
@@ -173,7 +173,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media do HeapSort vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao do HeapSort vale: %f \n",desvio);
+    printf("O desvio padrao do HeapSort vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "SelecaoHeapSort.txt");
     imprimi_ordenado(vetor, TAM);
@@ -192,7 +192,7 @@ int main(){
     media = media_tempos(tempos, VEZORDENACAO);
     printf("Media do MergeSort vale: %f [s]\n",media);
     desvio = desvio_tempos(tempos, media, VEZORDENACAO);
-    printf("O desvio padrao do MergeSort vale: %f \n",desvio);
+    printf("O desvio padrao do MergeSort vale: %f [s]\n",desvio);
 #ifdef DEBUG
     exporta_txt(vetor, TAMEXPORTA, "MergeSort.txt");
     imprimi_ordenado(vetor, TAM);
