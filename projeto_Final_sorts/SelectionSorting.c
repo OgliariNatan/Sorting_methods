@@ -9,7 +9,7 @@
 
 //#define DEBUG
 
-void select_sort ( int * vector, int n ){
+void select_sort ( int * vetor, int n ){
     int i, j, max = 0;
 
     for (i=n; i>1; i--) {
@@ -17,14 +17,14 @@ void select_sort ( int * vector, int n ){
         max = 0;//!<Indice do vetor
 
         for (j = 1; j < i; j ++)
-            if ( vector [j] > vector [max])
+            if ( vetor [j] > vetor [max])
                 max = j ;
-        troca (vector,i - 1, max);
+        troca (vetor,i - 1, max);
     }
 #ifdef DEBUG
     printf("A troca vale:\t");
     for(j=0; j<n; j++)
-        printf(" %d, ",vector[j]);
+        printf(" %d, ",vetor[j]);
     printf("\n");
 #endif // DEBUG
 }

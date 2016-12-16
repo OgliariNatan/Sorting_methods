@@ -15,7 +15,7 @@
 #include "quicksort.h"
 #include "Heap_sort.h"
 
-//#define DEBUGBUBBLRSORT
+#define DEBUGBUBBLRSORT
 #define DEBUGQUIKSORT
 #define DEBUGINCERCAODIRETA
 #define DEBUGINCERCAOBINARIA
@@ -25,9 +25,9 @@
 #define DEBUG  //!<Imprimi na tela e exporta para .txt
 
 
-#define TAM 1000    //!< Ideal 1000000
+#define TAM 1000000    //!< Ideal 1000000
 #define VEZORDENACAO 20 //!< Ideal 20
-#define TAMEXPORTA 100 //!< Define a quantidade de elementos a serem exportados
+#define TAMEXPORTA 500 //!< Define a quantidade de elementos a serem exportados
 
 int main(){
     int i;
@@ -65,6 +65,7 @@ int main(){
 #endif // DEBUG
     puts("---------------------");
 #endif // DEBUGBUBBLRSORT
+
 
 #ifdef DEBUGQUIKSORT //!< QUICK SORT
     puts("Metodo Quiksort");

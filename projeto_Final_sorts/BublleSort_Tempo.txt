@@ -1,23 +1,23 @@
 BublleSort_Tempo.txt
-Tempo[ 0 ]  0.000000
-Tempo[ 1 ]  0.000000
-Tempo[ 2 ]  0.000000
-Tempo[ 3 ]  0.010000
-Tempo[ 4 ]  0.000000
-Tempo[ 5 ]  0.000000
-Tempo[ 6 ]  0.000000
-Tempo[ 7 ]  0.010000
-Tempo[ 8 ]  0.000000
-Tempo[ 9 ]  0.000000
-Tempo[ 10 ]  0.000000
-Tempo[ 11 ]  0.000000
-Tempo[ 12 ]  0.010000
-Tempo[ 13 ]  0.000000
-Tempo[ 14 ]  0.000000
-Tempo[ 15 ]  0.000000
-Tempo[ 16 ]  0.000000
-Tempo[ 17 ]  0.010000
-Tempo[ 18 ]  0.000000
-Tempo[ 19 ]  0.000000
-A Media  BublleSort_Tempo.txt vale:  0.002000 [s] 
-O Desvio padrao  BublleSort_Tempo.txt vale: 0.004104 [s] 
+Tempo[ 0 ]  1305.144043 [s]
+Tempo[ 1 ]  1304.053955 [s]
+Tempo[ 2 ]  1303.709961 [s]
+Tempo[ 3 ]  1303.833008 [s]
+Tempo[ 4 ]  1303.380005 [s]
+Tempo[ 5 ]  1304.185059 [s]
+Tempo[ 6 ]  1304.796997 [s]
+Tempo[ 7 ]  1303.704956 [s]
+Tempo[ 8 ]  1304.140991 [s]
+Tempo[ 9 ]  1304.150024 [s]
+Tempo[ 10 ]  1303.859009 [s]
+Tempo[ 11 ]  1304.698975 [s]
+Tempo[ 12 ]  1300.029053 [s]
+Tempo[ 13 ]  1300.562988 [s]
+Tempo[ 14 ]  1300.218994 [s]
+Tempo[ 15 ]  1300.421997 [s]
+Tempo[ 16 ]  1299.906006 [s]
+Tempo[ 17 ]  1299.974976 [s]
+Tempo[ 18 ]  1300.364990 [s]
+Tempo[ 19 ]  1300.053955 [s]
+A Media  BublleSort_Tempo.txt vale:  1302.559448 [s] 
+O Desvio padrao  BublleSort_Tempo.txt vale: 2.026668 [s] 
