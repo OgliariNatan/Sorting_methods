@@ -132,7 +132,7 @@ void exportaTempo_txt (char *nomeArq, float media, float desvio, float *tempos, 
 
      fprintf(fp,"%s\n",nomeArq);
      for(x=0; x<tamExportaTempo; x++){
-          fprintf(fp, "%s %d %s %f %s\n","Tempo[",x, "] " ,tempos[x], "[s]");
+          fprintf(fp, "%s %d %s %f %s\n","Tempo[",x+1, "] " ,tempos[x], "[s]");
      }
 
      fprintf(fp, "%s %s %s %f %s \n", "A Media ",nomeArq, "vale: ", media, "[s]");
