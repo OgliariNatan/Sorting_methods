@@ -12,7 +12,7 @@ Requisitos:
 
 
 ->Seleção Direta  100%
-->Seleção Heapsort  0% arvore
+->Seleção Heapsort  100% arvore
 
 
 ->Merge Sort  100%
