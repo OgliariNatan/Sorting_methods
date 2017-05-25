@@ -1,4 +1,4 @@
-# TrabalhoFinal
+<h1> Sorting methods </h1>
 <p>
 Repositorio criado para a realização em conjunto do trabalho final da materia de Programação de computadores II.<br/>
 Requisitos:<br/>
@@ -15,10 +15,10 @@ Requisitos:<br/>
 
 
 
-Confira o <a href="https://goo.gl/lVNO1l">relatório final</a> <br/>
+Confira o <a href="https://goo.gl/lVNO1l">relatório final</a>. <br/>
 
 </p>
 <p>
 Controbuinte: <br/> 
-Augusto -> https://github.com/gutovsk49 <br/>
+<a href=" https://github.com/gutovsk49">Augusto</a>.<br/>
 </p>
