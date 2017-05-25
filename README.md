@@ -14,6 +14,9 @@ Requisitos:<br/>
 ->Merge Sort  <br/>
 
 Relatório final: https://goo.gl/lVNO1l <br/>
+
+<a href="https://goo.gl/lVNO1l">Relatório final</a> <br/>
+
 </p>
 <p>
 Controbuinte: <br/> 
