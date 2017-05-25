@@ -20,5 +20,5 @@ Confira o <a href="https://goo.gl/lVNO1l">relatório final</a>. <br/>
 </p>
 <p>
 Controbuinte: <br/> 
-<a href="https://github.com/gutovsk49">Augusto </a> <br/>
+<a href="https://github.com/gutovsk49">Augusto </a>. <br/>
 </p>
