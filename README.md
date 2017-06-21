@@ -13,7 +13,7 @@ Requisitos:<br/>
 
 ->Merge Sort  <br/>
 
-Confira o <a href="https://goo.gl/lVNO1l">relatório final</a>. <br/>
+Confira o <a href="https://drive.google.com/open?id=0BxyxF7Bi7nLkWldQQjdTaWZQUFk">relatório final</a>. <br/>
 
 </p>
 <p>
