@@ -2,17 +2,18 @@
 <p>
 Repositorio criado para a realização em conjunto do trabalho final da materia de Programação de computadores II.<br/>
 Requisitos:<br/>
-->Bubble Sort  <br/>
-->Quick Sort   <br/>
+<ul>
+  <li>Bubble Sort  <br/> </li>
+  <li>Quick Sort   <br/> </li>
 
-->Inserção Direta   <br/>
-->Inserção Binária  <br/>
+  Inserção Direta   <br/>
+  Inserção Binária  <br/>
 
-->Seleção Direta   <br/>
-->Seleção Heapsort <br/>
+  Seleção Direta   <br/>
+  Seleção Heapsort <br/>
 
-->Merge Sort  <br/>
-
+  Merge Sort  <br/>
+</ul>
 Confira o <a href="https://drive.google.com/open?id=0BxyxF7Bi7nLkWldQQjdTaWZQUFk">relatório final</a>. <br/>
 
 </p>
