@@ -6,13 +6,13 @@ Requisitos:<br/>
   <li>Bubble Sort  <br/> </li>
   <li>Quick Sort   <br/> </li>
 
-  Inserção Direta   <br/>
-  Inserção Binária  <br/>
+  <li>Inserção Direta   <br/> </li>
+  <li>Inserção Binária  <br/> </li>
 
-  Seleção Direta   <br/>
-  Seleção Heapsort <br/>
+  <li>Seleção Direta   <br/> </li>
+  <li>Seleção Heapsort <br/> </li>
 
-  Merge Sort  <br/>
+  <li>Merge Sort  <br/> </li>
 </ul>
 Confira o <a href="https://drive.google.com/open?id=0BxyxF7Bi7nLkWldQQjdTaWZQUFk">relatório final</a>. <br/>
 
