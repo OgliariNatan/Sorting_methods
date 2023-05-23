@@ -1,4 +1,6 @@
 <h1> Sorting methods </h1>
+<p> <img src="https://img.shields.io/github/languages/top/OgliariNatan/Sorting_methods?color=violet&style=plastic"> </p>
+
 <p>
 Repositorio criado para a realização em conjunto do trabalho final da materia de Programação de computadores II.<br/>
 Requisitos:<br/>
