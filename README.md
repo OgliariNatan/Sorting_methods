@@ -14,7 +14,7 @@ Requisitos:<br/>
 
   <li>Merge Sort  <br/> </li>
 </ul>
-Confira o <a href="[https://drive.google.com/open?id=0BxyxF7Bi7nLkWldQQjdTaWZQUFk](https://github.com/OgliariNatan/Sorting_methods/blob/master/Metodos%20de%20Ordena%C3%A7%C3%A3o%20(1).pdf)">relatório final</a>. <br/>
+Confira o <a href="https://github.com/OgliariNatan/Sorting_methods/blob/master/Metodos%20de%20Ordena%C3%A7%C3%A3o%20(1).pdf">relatório final</a>. <br/>
 
 </p>
 <p>
